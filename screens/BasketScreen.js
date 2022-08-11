@@ -107,7 +107,9 @@ const BasketScreen = () => {
 
           <View className="flex-row justify-between">
             <Text>Order Total</Text>
-            <Text className="font-bold">{basketTotal + 5.99} GBP</Text>
+            <Text className="font-bold">
+              {Math.round(basketTotal + 5.99)} GBP
+            </Text>
           </View>
 
           <TouchableOpacity
